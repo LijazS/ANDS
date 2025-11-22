@@ -87,53 +87,6 @@ Comprehensive computer vision-based ADAS prototype implementing lane detection, 
 - OpenCV and NumPy installed  
 - Camera connected and working  
 
-### Installation
-
-git clone https://github.com/LijazS/ADAS.git
-cd ADAS
-pip install -r requirements.txt
-
-
-### Usage
-
-Live camera demo with automatic dim/bright
-python src/main.py --camera 0
-
-text
-
-(Adjust the command if your entry file or arguments differ.)
-
----
-
-## 📁 Project Structure
-
-ADAS/
-├── src/
-│ ├── main.py
-│ ├── detection.py
-│ └── relay.py
-├── docs/images/ # Demo screenshots
-├── data/ # Test images/videos
-├── requirements.txt
-└── Presentation.pdf
-
-text
-
-(Adapt filenames to your actual code.)
-
----
-
-## ⚙️ Configuration
-
-Basic configuration is done via constants in the code, for example:
-
-BRIGHTNESS_THRESHOLD = 240 # pixel intensity for headlight detection
-MIN_CONTOUR_AREA = 50 # filter out noise
-DIMMING_DELAY_SEC = 0.5 # debounce before toggling relay
-
-text
-
-Describe or link to where these live (e.g. `config.py` or top of `main.py`).
 
 ---
 
@@ -143,9 +96,6 @@ Describe or link to where these live (e.g. `config.py` or top of `main.py`).
 - Automatically toggles between **BRIGHT** and **DIM** using a relay to control the headlamps.
 - Verified at night on real roads using a Raspberry Pi mounted inside the car.
 
-Include the results image:
-
-text
 
 ---
 
@@ -185,4 +135,5 @@ Possible improvements:
 ## 📄 License
 
 MIT License – see `LICENSE` for details.
+
 *⭐ Star this repo if you found it useful!*
